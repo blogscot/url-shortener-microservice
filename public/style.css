@@ -42,6 +42,15 @@ button {
   outline-width: 2px;
 }
 
+#visit-link {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+#short-url a {
+  text-decoration: none;
+}
+
 .hidden {
   visibility: hidden;
 }
