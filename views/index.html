@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Hello HTML</title>
-		<link rel="stylesheet" href="/style.css">
-	</head>
-	<body>
-		<h1>Hello, HTML.</h1>
-		<p>Do not use until Challenge #12</p>
-     <form action="/name" method="post">
-      <label>First Name :</label>
-      <input type="text" name="first" value="John"><br>
-      <label>Last Name :</label>
-      <input type="text" name="last" value="Doe"><br><br>
-      <input type="submit" value="Submit">
-    </form> 
-	</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="javascript playground" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <section>
+      <input
+        type="url"
+        name="originalURL"
+        id="originalURL"
+        placeholder="URL to Shorten"
+      />
+      <button type="submit">Submit</button>
+    </section>
+    <section id="output" class="hidden">
+      <label for="shortURL">
+        Short URL:
+      </label>
+      <span id="shortURL"></span>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>

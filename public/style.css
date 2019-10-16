@@ -1,16 +1,47 @@
-/* the 'body' selector is required for the tests to pass */
-/* You can change the style attributes if you want */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #222;
-  color: #ddd;
-  text-align: center;
-  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
 }
 
-h1 {
-  font-size: 4em;
+section:nth-of-type(1) {
+  margin: 5rem 0;
 }
 
-input[type=text], label {
-  margin-bottom: 8px;
+input[type='url'] {
+  padding: 6px 12px;
+  font-size: inherit;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+input[type='url']:hover {
+  background-color: rgb(250, 215, 250);
+}
+
+input[type='url']:focus {
+  background-color: rgb(250, 205, 250);
+  outline: none;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: inherit;
+  background-color: purple;
+  color: ivory;
+  cursor: pointer;
+  outline-color: purple;
+  outline-width: 2px;
+}
+
+.hidden {
+  visibility: hidden;
 }
